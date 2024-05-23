@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import img1 from './images/Profilepicture.png'
+import resume from './Dev-Beda_Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -38,7 +39,7 @@ function Home() {
         
         <div  className=" bg-blue-600 px-4 py-2 rounded-3xl text-lg flex items-center justify-center gap-2" >
         <FontAwesomeIcon icon={faCloudArrowDown} />
-          <a href="./Dev-Beda_Resume.pdf" download="Resume.pdf">Resume</a>
+          <a href={resume} download="Resume.pdf">Resume</a>
         </div>
       </div>
     </header>
