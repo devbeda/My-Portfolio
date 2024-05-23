@@ -18,10 +18,10 @@ function Github() {
         <div className="w-[50%] h-auto flex gap-14 items-center flex-col md:flex-row">           
             <img  src={data.avatar_url} alt="Git picture" className=" w-[400px] rounded-full"/>
             <div>
-                <div className="text-3xl  text-white">Username: {data.login}</div>
-                <div className="text-3xl  text-white mb-5">Followers: {data.followers}</div>
+                <div className="text-xl md:text-3xl  text-white">Username: {data.login}</div>
+                <div className="text-xl md:text-3xl text-white mb-5">Followers: {data.followers}</div>
                 <Link className="flex items-center justify-center" to={data.html_url}>
-                  <button className="bg-blue-500 px-4 py-2 text-lg  text-center rounded-3xl">
+                  <button className="bg-blue-500 px-4 py-2 md:text-lg text-[1rem]  text-center rounded-3xl">
                     Github
                   </button>
                 </Link>
